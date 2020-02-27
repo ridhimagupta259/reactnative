@@ -19,32 +19,9 @@ class Home extends React.Component {
     
     return (
       <View style={styles.container}>
-        <Text>{'user input: ' + this.state.text} </Text>
-        <TextInput
-          style={{
-            height: 50,
-            width: '90%',
-            borderColor: 'red',
-            borderWidth: 1,
+        <View style ={[styles.child,{backgroundColor:'black'},{width:80}]}/>
 
-          }}
-         
-          onChangeText={(text) => this.setState({text})}
-        
-        />
-        <Text>{'Password: ' + this.state.input}</Text>
-        <TextInput
-          style={{
-            height: 50,
-            width: '90%',
-            borderColor: 'red',
-            borderWidth: 1,
-          }}
-          onChangeText={(input) => this.setState({input})}
-
-        />
-
-
+ 
       </View>
     );
   }
@@ -59,6 +36,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  child:{
+
+    height: 50,
+    //width:50,
+    backgroundColor:'blue'
+    alignItems:"flex-start",
+    flex=0.25
+  }
 });
 
 export default Home;
