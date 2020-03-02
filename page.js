@@ -20,10 +20,10 @@ class Page extends React.Component {
          </View>
 
        <View style={styles.child2}>
-        <Text style={{fontSize:20,fontWeight:'bold',color:'black',marginLeft:130,marginTop:10}}>Enter Amount</Text>
-        <Text style={{fontSize:15,color:'#9494b8',marginLeft:105,padding:5}}>Recommended Recharge</Text>
-         <Text style={{fontSize:50,color:'#000',fontWeight:'bold',marginLeft:115,padding:10}}>₹999</Text>
-         <Text style={{textAlign:'center',color:'#fff',backgroundColor:'#ff0066',marginLeft:100,marginRight:80,height:50,padding:15,fontSize:15,fontWeight:"bold"}}>Proceed to payment</Text>
+        <Text style={{fontSize:20,fontWeight:'bold',color:'black'}}>Enter Amount</Text>
+        <Text style={{fontSize:15,color:'#9494b8'}}>Recommended Recharge</Text>
+         <Text style={{fontSize:50,color:'#000',fontWeight:'bold',}}>₹999</Text>
+         <Text style={{textAlign:'center',color:'#fff',backgroundColor:'#ff0066',fontSize:15,fontWeight:"bold",padding:15,margin:20}}>Proceed to payment</Text>
          
        </View>
        <Text style={{marginTop:50,fontSize:20,marginLeft:20}}>Recommended Plans</Text>
@@ -72,7 +72,8 @@ const styles = StyleSheet.create({
     flex: 0.25,
     marginTop: -40,
     width:'90%',
-    marginLeft:20
+    marginLeft:20,
+    alignItems:'center'
 
   },
   child3: {
@@ -80,7 +81,8 @@ const styles = StyleSheet.create({
     flex:0.35,
     width:'90%',
     marginLeft:20,
-    marginTop:30
+    marginTop:30,
+    alignItems:'flex-start'
 
 
 
